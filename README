@@ -1,3 +1,19 @@
+DEAR MACRUMOR people!! I finally found a way to change PCI registers in Windows 11 to make it work in EFI mode on the old MACs!!!
+It was pretty difficult to understand why its not working like in Linux! Its because Even if You are properly setting ur PCI registers
+for GPU and the BRIDGE - when Windows start loading KERNEL it basically resets it back! 
+So be it!
+But can trick it with this tool))
+# PCI Utilities Windows 11 Edition (PCIEDIT was updated to work in Windows11 (tested with 21H2)
+1)Download windows gebugger from the links below (or u can just download the file from here)
+2)Windows gebugger folder Add it to PATH
+3)RUN gpedit.msc and add yourself rights to RUN as SYSTEM
+4)Enable DEBUG in BCDEDIT (bcdedit /debug)
+5)Reboot your system( I do recommend for the previous operation BOOTICE(https://www.majorgeeks.com/files/details/bootice_64_bit.html)
+It makes it supereasy to change any boot arguments and many more!
+6)https://github.com/nonamebard/bettercamp_w11 download code and copy this folder to C:\ directory
+
+
+
 This package contains the PCI Utilities, version @VERSION@.
 
 Copyright (c) 1997--2024 Martin Mares <mj@ucw.cz>
